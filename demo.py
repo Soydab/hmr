@@ -41,6 +41,7 @@ flags.DEFINE_string(
     'json_path', None,
     'If specified, uses the openpose output to crop the image.')
 
+sys.path.insert(0,'/tensorflow-1.15.2/python2.7')
 
 def visualize(img_path, img, proc_param, joints, verts, cam):
     """
